@@ -1,0 +1,113 @@
+/*#backgroundBox {
+	display: inline-block;
+    width: 1000px;
+    height: 925px;
+    border-radius: 5%;
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    background: #FFF;
+}
+*/
+body {
+	background-color: #CFEFEE;
+}
+
+#signInBG {
+	background-color: #CFEFEE;
+	width: auto;
+  	max-width: 680px;
+  	padding: 65px 55px 0 65px;
+} 
+
+#pinky, #pinky2 {
+	color: #6F1549;
+	background-color: #F3CECD;
+
+/*	font-family: georgia;
+	font-weight: bold;
+	color: #6F1549;*/
+}
+
+a, #href, li {
+	color: #69C4CC;
+}
+
+
+.btn-search25 {
+	background-color: #8db639;
+	color: white;
+}
+
+
+#hella {
+    vertical-align: middle;
+}
+
+#aboutButton,
+#contactButton,
+#blogButton,
+#pressButton
+ 
+ {
+	vertical-align: center;
+	margin-top: 7em;
+	margin-left: 37px;
+	color: white;
+
+}
+
+.btn-blog {
+	background-color: #6F308B;
+}
+
+.btn-press {
+	background-color: #E9168C;
+}
+
+.btn-about {
+	background-color: #69C4CC;
+}
+
+.btn-contact {
+	background-color: #8db639;
+}
+
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 25px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+#easierLifep {
+	font-family: georgia;
+	font-size: 25px;
+	font-weight: bold;
+	color: #8db639;
+}
+
+#sellingGentlyp {
+	color:	#69C4CC;
+	font-size: 18px
+}
+
+#triplets,
+#quads,
+#tree {
+	margin-top: 15px;
+}
+
+
+#line {
+	margin-top: 30px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#twitter {
+	margin-top: 15px;
+}
+

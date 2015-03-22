@@ -10,15 +10,15 @@
     <!-- Bootstrap -->
 
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/auction.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme-min.css>"
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+ 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,69 +28,60 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
-<ol class="breadcrumb">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Library</a></li>
-  <li class="active">Data</li>
-</ol>
+    <div id="backgroundBox"></div>
+    <!--     <div class="page-header"></div> -->
 
-<div class="row">
-  <div class="col-sm-9">
-    Level 1: .col-sm-9
+  
     <div class="row">
-      <div class="col-xs-8 col-sm-6">
-        Level 2: .col-xs-8 .col-sm-6
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4">  
+          <ol class="breadcrumb" id="signInBG">
+            <li><a href="#">sign in</a></li>
+            <li> <a href="#">sign up</a></li>
+          </ol>
       </div>
-      <div class="col-xs-4 col-sm-6">
-        Level 2: .col-xs-4 .col-sm-6
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-4"><img src = "images/savings-multiplied-logo.png"></div>
+      <div class="col-md-4">
+          <!-- Standard button -->
+          <button type="button" class="btn btn-about" id="aboutButton">About</button>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-contact" id="contactButton">Contact</button>
+
+          <!-- Indicates a successful or positive action -->
+          <button type="button" class="btn btn-blog" id="blogButton">Blog</button>
+
+          <!-- Contextual button for informational alert messages -->
+          <button type="button" class="btn btn-press" id="pressButton">Press</button>
+              <BR><BR>
+           <img src="images/tagline.png">
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
-<body class="bgColor"> 
-
-
-<ul class="nav nav-pills">
-  <li role="presentation"><a class="navPilChangeColor" href="#">sign in</a></li> 
-  <li class="navStackedBar">|</li>  
-  <li role="presentation"><a class="navPilChangeColor" href="#">sign up</a></li>
-</ul>
-
-
-<nav class="Logo" class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <img alt="Brand" src="images\savings-multiplied-logo.png"> <img alt="Tagline" src="images\tagline.png">
-        <span class="label label-default">Default</span>
-    </a>
-
- </nav> 
-
-
- <!-- MT testing this to see if i can make the pink bar. -->
-<nav class="PeachNav" class="navbar navbar-default">
-  <div class="container-fluid">
+    <nav class="navbar navbar-default" id="pinky">
+        <div class="container-fluid" id="pinky2">
+          <div class="col-md-2"></div>
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-       <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="#">Buy</a>
+            </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-       <li><a href="#">Link</a></li>
+      <ul class="nav navbar-nav navbar-middle">
+        <li class="active"><a href="#">Sell <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">How it works</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Links<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -99,48 +90,175 @@
             <li><a href="#">Separated link</a></li>
             <li class="divider"></li>
             <li><a href="#">One more separated link</a></li>
-         </ul>
-       </li>
-     </ul>
-          <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-       </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-     <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-         <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-           <li><a href="#">Something else here</a></li>
-                       <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
           </ul>
         </li>
-     </ul>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Community<span class="caret"></span></a>
+      </ul>
+            <div class="col-md-4"></div>
+
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
-<h1></h1>
+<!-- this is the content under the pink nav bar -->
+<div class="row">
+  <div class="col-md-2"></div>
+      <div class="col-md-3">
+                   <a class="btn btn-search25" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Search Options
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                      <div class="well">
+                        <form class="form-inline">
 
-<div class="roundedSquareBackground"> 
-</div>  
-   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-   <script src="js/bootstrap.min.js"></script>
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="search">
+                        </div>
+                      <button type="submit" class="btn btn-default">Search</button>
 
-+  </body>
-+
-+  <section>
-+  hella
-+  </section>
-+
-+  </html>
+
+                      </form>
+
+                          <div class="radio">
+                          <label> <p id="clothingCondition">Condition  </p>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            New
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Gently used
+                          </label>  
+                        </div>
+                              <p id="size">Size:</p>
+                              <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 4
+                              </label>
+                              <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 8
+                              </label>
+
+                              <BR>
+
+                              <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 5
+                              </label>
+                              <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 9
+                              </label>
+
+                              <BR>
+
+                                <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 6
+                              </label>
+                              <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 10
+                              </label>
+
+
+                              <BR>
+
+                               <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 7
+                              </label>
+                              <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 11
+                              </label>
+
+                              <BR>
+
+                                 <div class="radio">
+                          <label> <p id="clothingCondition">Season  </p>
+                              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                              All seasons
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                              Spring
+                          </label>
+                        </div>
+                         <div class="radio">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                              Summer
+                          </label> 
+                        </div>
+                         <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Fall
+                          </label>
+                        </div>
+                         <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Winter
+                          </label>   
+                        </div>
+
+                        <div class="radio">
+                          <label> <p id="clothingCondition">Type  </p>
+                              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                              Any
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                              One-Piece
+                          </label>
+                        </div>
+                         <div class="radio">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                              Tops
+                          </label> 
+                        </div>
+                         <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Bottoms
+                          </label>
+                        </div>
+
+                        <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    Brand:
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Janie and Jack</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Osh Kosh B'Gosh</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gap</a></li>
+  </ul>
+</div>
+
+                      </div>
+                    </div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -148,5 +266,37 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+
   </body>
+
+ <div id="footer">
+  <div class="container">
+        <div class="row">
+          <ul class="list-unstyled">
+            <li class="col-md-2 col-sm-4 col-xs-6">
+              <a href="index.html">link here</a>
+            </li>
+            <li class="col-md-2 col-sm-4 col-xs-6">
+              <a href="services.html">link here</a>
+            </li>
+            <li class="col-md-2 col-sm-4 col-xs-6">
+              <a href="404.html">link here</a>
+            </li>
+            <li class="col-md-2 col-sm-4 col-xs-6">
+              <a href="404.html">link here</a>
+            </li>
+            <li class="col-md-2 col-sm-4 col-xs-6">
+              <a href="404.html">link here</a>
+            </li>
+            <li class="col-md-2 col-sm-4 col-xs-6">
+              <a href="404.html">link here</a>
+            </li>
+           
+          </ul>
+    </div><!--/row-->
+
+  </div><!--/container-->
+</div>
+ 
 </html>
